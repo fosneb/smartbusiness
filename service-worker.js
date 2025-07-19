@@ -2,6 +2,11 @@ const staticCacheName = 's-app-v1'
 
 const assertUrls = [
     'index.html',
+    'about.html',
+    'bid.html',
+    'contact.html',
+    'pricing.html',
+    'services.html',
     'app.js',
     'style.css'
 ]

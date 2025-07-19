@@ -1,7 +1,9 @@
 {
-  "theme_color": "#2196f3",
-  "background_color": "#2196f3",
-  "display": "browser",
+  "name": "SMARTBUSINESS",
+  "short_name": "SB",
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "display": "fullscreen",
   "scope": "/smartbusiness/",
   "start_url": "/smartbusiness/",
   "icons": [
@@ -452,6 +454,19 @@
     {
       "src": "ios/1024.png",
       "sizes": "1024x1024"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "smartbusiness.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "smartbusiness.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "wide"
     }
   ]
 }
