@@ -24,7 +24,21 @@
     <main>
         <section class="content-wrapper">
             <div class="content-text">
-                <span>Заявок пока нету.</span>
+                <h1>Список обращений</h1>
+    
+                <div id="data-table">Загрузка данных...</div>
+
+                <script>
+                    fetch('bid.php')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById('data-table').innerHTML = html;
+                    })
+                    .catch(error => {
+                        document.getElementById('data-table').innerText = "Ошибка загрузки данных";
+                        console.error(error);
+                    });
+                </script>
             </div>
         </section>
     </main>

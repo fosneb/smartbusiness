@@ -25,9 +25,8 @@ $stmt->bind_param("sss", $name, $email, $message);
 
 // Выполнение запроса
 if ($stmt->execute()) {
-  echo "Сообщение успешно отправлено!";
-} else {
-  echo "Ошибка при сохранении: " . $stmt->error;
+  header("Location: contact.html"); // редирект на страницу успешной отправки
+  exit(); // всегда вызывайте exit после header
 }
 
 // Закрытие соединения
